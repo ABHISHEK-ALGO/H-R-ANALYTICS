@@ -23,5 +23,7 @@ As the ML Developer assigned to the HR Department, you have been asked to create
 7.Suggest various retention strategies for targeted employees.
 
 Solution to all this are provided in the Employee Attrition Analytics pdf.
+https://github.com/ABHISHEK-ALGO/H-R-ANALYTICS/issues/3#issue-2892120871
+
 
 

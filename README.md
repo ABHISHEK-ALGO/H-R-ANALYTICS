@@ -1,4 +1,18 @@
 # H R Analytics - Employee Attrition Prediction
+
+Dashboard pic or video
+
+# Table of Contents
+<a id='table_of_contents'></a><br>
+[Project Summary](#section_1)<br>
+[Part 1: Trends (Excel)](#section_2)<br>
+[Part 2: Targeted Insights (SQL)](#section_3)<br>
+[Part 3: Visualizations (Tableau)](#section_4)<br>
+[Part 4: Recommendations & Next Steps](#section_5)<br>
+[Addendum: Notes on Data Cleaning](#section_6)<br>
+
+<a id='section_1'></a>
+# Project Summary
 Project Statement:
 Portobello Tech is an app innovator that has devised an intelligent way of predicting employee turnover within the company. It periodically evaluates employees' work details including the number of projects they worked upon, average monthly working hours, time spent in the company, promotions in the last 5 years, and salary level.
 
@@ -6,28 +20,23 @@ Data from prior evaluations show the employee’s satisfaction at the workplace.
 
 HR Department owns the data and uses it to predict employee turnover. Employee turnover refers to the total number of workers who leave a company over a certain time period.
 
-As the ML Developer assigned to the HR Department, you have been asked to create ML Programs to
+As the Data Analyst assigned to the HR Department, I have been asked to find
 
-1.Perform data quality check by checking for missing values if any.
+- <b>Part 1: Targeted Insights</b>
 
-2.Understand what factors contributed most to employee turnover by EDA.
+  * With the aid of SQL, I pull out more targeted insights for the finance and marketing team, highlighting things like MacBook sales, refund rates, and best performing marketing channels.
 
-3.Perform clustering of Employees who left based on their satisfaction and evaluation.
+- <b>Part 2: Visualization</b>
+  * Leverage Tableau to create Dashboard
+- <b>Part 3: Perform EDA</b>
+- <b>Part 4: Perform Machine Learing</b>
+  * To Cluster Employees who left based on their satisfaction and evaluation.
+  * Gather important attributes or features responsible
+- <b>Part 5: Deploy a model</b>
+  * to predict whether a employee will leave or stay
 
-4.Handle the left Class Imbalance using SMOTE technique.
 
-5.Perform k-fold cross-validation model training and evaluate performance. 
 
-6.Identify the best model and justify the evaluation metrics used. 
-
-7.Suggest various retention strategies for targeted employees.
-
-Solution to all this are provided in the Employee Attrition Analytics pdf.
-
-https://github.com/user-attachments/assets/1aa9499f-7fb9-4b7e-84f0-df20ed683d42
-
-## Tools and Techniques Used:
-SMOTE Technique
 
 
 

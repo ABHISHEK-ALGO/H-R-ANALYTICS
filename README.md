@@ -5,11 +5,12 @@ Dashboard pic or video
 # Table of Contents
 <a id='table_of_contents'></a><br>
 [Project Summary](#section_1)<br>
-[Part 1: Trends (Excel)](#section_2)<br>
-[Part 2: Targeted Insights (SQL)](#section_3)<br>
-[Part 3: Visualizations (Tableau)](#section_4)<br>
-[Part 4: Recommendations & Next Steps](#section_5)<br>
-[Addendum: Notes on Data Cleaning](#section_6)<br>
+[Part 1: Targeted Insights](#section_2)<br>
+[Part 2: Visualizations (Tableau)](#section_3)<br>
+[Part 3: Perform EDA](#section_4)<br>
+[Part 4: Perform Machine Learning](#section_5)<br>
+[Part 5: Deploy the Model](#section_5)<br>
+[Assumptions Taken if Any](#section_6)<br>
 
 <a id='section_1'></a>
 # Project Summary

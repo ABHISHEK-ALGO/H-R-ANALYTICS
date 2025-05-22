@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HR Attrition Prediction</title>
+</head>
+<body>
+    <h1>HR Analytics - Employee Attrition Prediction</h1>
+    <form action="/predict" method="post">
+        <label>Actual Salary:</label>
+        <input type="number" name="actual_salary" required><br>
+
+        <label>Promotion in Last 5 Years:</label>
+        <select name="promotion_last_5years">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </select><br>
+
+        <label>Satisfaction Level:</label>
+        <input type="number" name="satisfaction_level" step="0.01" min="0" max="1" required><br>
+
+        <label>Last Evaluation Score:</label>
+        <input type="number" name="last_evaluation" step="0.01" min="0" max="1" required><br>
+
+        <label>Number of Projects:</label>
+        <input type="number" name="number_project" min="1" max="10" required><br>
+
+        <label>Average Monthly Hours:</label>
+        <input type="number" name="average_montly_hours" min="50" max="350" required><br>
+
+        <label>Years at Company:</label>
+        <input type="number" name="time_spend_company" min="1" max="10" required><br>
+
+        <label>Work Accident:</label>
+        <select name="Work_accident">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </select><br>
+
+        <label>Gender:</label>
+        <select name="gender">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select><br>
+
+        <label>Salary Level:</label>
+        <select name="salary_level">
+            <option value="low">Low</option>
+            <option value="medium">Medium</option>
+            <option value="high">High</option>
+        </select><br>
+
+        <label>Department:</label>
+        <select name="department">
+            <option value="IT">IT</option>
+            <option value="RandD">RandD</option>
+            <option value="accounting">Accounting</option>
+            <option value="hr">HR</option>
+            <option value="management">Management</option>
+            <option value="marketing">Marketing</option>
+            <option value="product_mng">Product Management</option>
+            <option value="sales">Sales</option>
+            <option value="support">Support</option>
+            <option value="technical">Technical</option>
+        </select><br>
+
+        <button type="submit">Predict</button>
+    </form>
+
+    {% if prediction %}
+        <h2>Prediction: {{ prediction }}</h2>
+        <h3>{{ probability }}</h3>
+    {% endif %}
+
+    {% if error %}
+        <h3 style="color:red;">Error: {{ error }}</h3>
+    {% endif %}
+</body>
+</html>

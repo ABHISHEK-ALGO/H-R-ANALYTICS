@@ -4,13 +4,14 @@ Dashboard pic or video
 
 # Table of Contents
 <a id='table_of_contents'></a><br>
-[Project Summary](#section_1)<br>
-[Part 1: Targeted Insights](#section_2)<br>
-[Part 2: Visualizations (Tableau)](#section_3)<br>
-[Part 3: Perform EDA](#section_4)<br>
-[Part 4: Perform Machine Learning](#section_5)<br>
-[Part 5: Deploy the Model](#section_5)<br>
-[Assumptions Taken if Any](#section_6)<br>
+[Project Summary](#section0)<br>
+[Part 1: Targeted Insights](#section1)<br>
+[Part 2: Visualizations (Tableau)](#section2)<br>
+[Part 3: Perform EDA](#section3)<br>
+[Part 4: Perform Machine Learning](#section4)<br>
+[Part 5: Deploy the Model](#section5)<br>
+[Application and Recommendations](#section6)<br>
+[Assumptions Taken if Any](#section7)<br>
 
 <a id='section_1'></a>
 # Project Summary
@@ -27,15 +28,15 @@ As the Data Analyst assigned to the HR Department, I have been asked to find
 
   * With the aid of SQL, I pull out more targeted insights for the finance and marketing team, highlighting things like MacBook sales, refund rates, and best performing marketing channels.
 
-- <b>Part 2: Visualization</b>
-  * Leverage Tableau to create Dashboard
-- <b>Part 3: Perform EDA</b>
+- <b>Part 2: Visualize Employee Turnover and Potential groups of Employees in the Company.</b>
+  * 
+- <b>Part 3: Perform EDA to get deeper insights for the turnover and find reasons of turnover.</b>
 - <b>Part 4: Perform Machine Learing</b>
   * To Cluster Employees who left based on their satisfaction and evaluation.
   * Gather important attributes or features responsible
+  * Develop a model to predict employee will leave or stay.
 - <b>Part 5: Deploy a model</b>
-  * to predict whether a employee will leave or stay
-
+  * Build a prototype webpage which takes features responsible for turnover as input and predict whether employee will stay or leave.
 
 
 

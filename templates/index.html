@@ -1,80 +1,167 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HR Attrition Prediction</title>
+    <title>HR Early Warning System</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f6f8;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #2c3e50;
+        }
+
+        form {
+            max-width: 600px;
+            margin: auto;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin: 12px 0 6px;
+            font-weight: 500;
+            color: #333;
+        }
+
+        input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 16px;
+        }
+
+        h4 {
+            margin-top: 30px;
+            margin-bottom: 10px;
+            font-size: 18px;
+            color: #2c3e50;
+            text-align: center;
+            background-color: #ecf0f1;
+            padding: 10px;
+            border-radius: 6px;
+        }
+
+        .department-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+        }
+
+        .department-grid label {
+            margin: 6px 0 4px;
+        }
+
+        input[type="submit"] {
+            margin-top: 20px;
+            width: 100%;
+            padding: 12px;
+            background-color: #3498db;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #2980b9;
+        }
+
+        h3 {
+            text-align: center;
+            color: #27ae60;
+            margin-top: 30px;
+        }
+    </style>
 </head>
 <body>
-    <h1>HR Analytics - Employee Attrition Prediction</h1>
-    <form action="/predict" method="post">
+    <h2>HR Early Warning System</h2>
+    <form method="POST" action="/predict">
         <label>Actual Salary:</label>
-        <input type="number" name="actual_salary" required><br>
+        <input type="number" name="actual_salary" step="0.01" required>
 
-        <label>Promotion in Last 5 Years:</label>
-        <select name="promotion_last_5years">
-            <option value="1">Yes</option>
-            <option value="0">No</option>
-        </select><br>
+        <label>Promotion in Last 5 Years (0/1):</label>
+        <input type="number" name="promotion_last_5years" min="0" max="1" required>
 
         <label>Satisfaction Level:</label>
-        <input type="number" name="satisfaction_level" step="0.01" min="0" max="1" required><br>
+        <input type="number" name="satisfaction_level" step="0.01" required>
 
-        <label>Last Evaluation Score:</label>
-        <input type="number" name="last_evaluation" step="0.01" min="0" max="1" required><br>
+        <label>Last Evaluation:</label>
+        <input type="number" name="last_evaluation" step="0.01" required>
 
         <label>Number of Projects:</label>
-        <input type="number" name="number_project" min="1" max="10" required><br>
+        <input type="number" name="number_project" required>
 
         <label>Average Monthly Hours:</label>
-        <input type="number" name="average_montly_hours" min="50" max="350" required><br>
+        <input type="number" name="average_montly_hours" required>
 
-        <label>Years at Company:</label>
-        <input type="number" name="time_spend_company" min="1" max="10" required><br>
+        <label>Time Spent in Company:</label>
+        <input type="number" name="time_spend_company" required>
 
-        <label>Work Accident:</label>
-        <select name="Work_accident">
-            <option value="1">Yes</option>
-            <option value="0">No</option>
-        </select><br>
+        <label>Work Accident (0/1):</label>
+        <input type="number" name="work_accident" min="0" max="1" required>
 
-        <label>Gender:</label>
-        <select name="gender">
-            <option value="Male">Male</option>
-            <option value="Female">Female</option>
-        </select><br>
+        <label>Salary Category Encoded (0/1/2):</label>
+        <input type="number" name="salary_category" min="0" max="2" required>
 
-        <label>Salary Level:</label>
-        <select name="salary_level">
-            <option value="low">Low</option>
-            <option value="medium">Medium</option>
-            <option value="high">High</option>
-        </select><br>
+        <label>Gender Male (1 for Male, 0 for Female):</label>
+        <input type="number" name="gender_male" min="0" max="1" required>
 
-        <label>Department:</label>
-        <select name="department">
-            <option value="IT">IT</option>
-            <option value="RandD">RandD</option>
-            <option value="accounting">Accounting</option>
-            <option value="hr">HR</option>
-            <option value="management">Management</option>
-            <option value="marketing">Marketing</option>
-            <option value="product_mng">Product Management</option>
-            <option value="sales">Sales</option>
-            <option value="support">Support</option>
-            <option value="technical">Technical</option>
-        </select><br>
+        <h4>Department Encoding (1 for selected, 0 for others)</h4>
+        <div class="department-grid">
+            <div>
+                <label>R&D:</label>
+                <input type="number" name="department_randd" min="0" max="1">
+            </div>
+            <div>
+                <label>Accounting:</label>
+                <input type="number" name="department_accounting" min="0" max="1">
+            </div>
+            <div>
+                <label>HR:</label>
+                <input type="number" name="department_hr" min="0" max="1">
+            </div>
+            <div>
+                <label>Management:</label>
+                <input type="number" name="department_management" min="0" max="1">
+            </div>
+            <div>
+                <label>Marketing:</label>
+                <input type="number" name="department_marketing" min="0" max="1">
+            </div>
+            <div>
+                <label>Product Management:</label>
+                <input type="number" name="department_product_mng" min="0" max="1">
+            </div>
+            <div>
+                <label>Sales:</label>
+                <input type="number" name="department_sales" min="0" max="1">
+            </div>
+            <div>
+                <label>Support:</label>
+                <input type="number" name="department_support" min="0" max="1">
+            </div>
+            <div>
+                <label>Technical:</label>
+                <input type="number" name="department_technical" min="0" max="1">
+            </div>
+        </div>
 
-        <button type="submit">Predict</button>
+        <input type="submit" value="Predict">
     </form>
 
-    {% if prediction %}
-        <h2>Prediction: {{ prediction }}</h2>
-        <h3>{{ probability }}</h3>
-    {% endif %}
-
-    {% if error %}
-        <h3 style="color:red;">Error: {{ error }}</h3>
+    {% if prediction_text %}
+        <h3>{{ prediction_text }}</h3>
     {% endif %}
 </body>
 </html>

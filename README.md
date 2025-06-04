@@ -22,7 +22,7 @@ Data from prior evaluations show the employee’s satisfaction at the workplace.
 
 HR Department owns the data and uses it to predict employee turnover. Employee turnover refers to the total number of workers who leave a company over a certain time period.
 
-As the Data Analyst assigned to the HR Department, I have been asked to find
+As the ML developer assigned to the HR Department, I have been asked to find
 
 - <b>Part 1: Targeted Insights</b>
 

@@ -1,5 +1,6 @@
 # H R Analytics - Employee Turnover Prediction
 
+HR Tech marks to be a 22 Billion USD market size & is highly invested in Cognitive Neuroscience with AI. The current challenge is a huge research initiative in the field of Neuroscience which leverages AI to compute human behavior markers for success. This is widely worked in the HR Industry to assess work & talent management. AI-based reports have been deployed in Manufacturing, Communications, Retail Hiring & job suitability. 
 Dashboard pic or video
 
 # Table of Contents

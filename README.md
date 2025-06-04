@@ -85,8 +85,13 @@ The interactive dashboard provides valuable insights into employee turnover and 
   * Build a prototype webpage which takes features responsible for turnover as input and predict whether employee will stay or leave.
     [App video Link]https://github.com/user-attachments/assets/930290bf-f754-4b83-b896-fb8135e0670a
 
-
-
-
+<a id='section6'></a>
+## Applications And Benefits:
+- Turnover Forecast
+- Resource Management 
+- To plan perks and benefits
+- Pre informed decision on critical aspects like promotions, merit increment, career growth plan
+- Assertive measures as an employer for any kind of misconduct 
+- Departmental Turnover Cost Analysis
 
 

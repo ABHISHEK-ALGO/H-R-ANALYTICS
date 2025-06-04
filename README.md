@@ -2,8 +2,8 @@
 
 HR Tech marks to be a 22 Billion USD market size & is highly invested in Cognitive Neuroscience with AI. The current challenge is a huge research initiative in the field of Neuroscience which leverages AI to compute human behavior markers for success. This is widely worked in the HR Industry to assess work & talent management. AI-based reports have been deployed in Manufacturing, Communications, Retail Hiring & job suitability. 
 Dashboard pic or video
-
-# Table of Contents
+***
+## Table of Contents
 <a id='table_of_contents'></a><br>
 [Project Summary](#section0)<br>
 [Part 1: Targeted Insights](#section1)<br>
@@ -15,8 +15,8 @@ Dashboard pic or video
 [Assumptions Taken if Any](#section7)<br>
 
 <a id='section_1'></a>
-# Project Summary
-Project Statement:
+## Project Summary
+**Project Statement:**
 Portobello Tech is an app innovator that has devised an intelligent way of predicting employee turnover within the company. It periodically evaluates employees' work details including the number of projects they worked upon, average monthly working hours, time spent in the company, promotions in the last 5 years, and salary level.
 
 Data from prior evaluations show the employee’s satisfaction at the workplace. The data could be used to identify patterns in work style and their interest to continue to work in the company. 
@@ -24,15 +24,18 @@ Data from prior evaluations show the employee’s satisfaction at the workplace.
 HR Department owns the data and uses it to predict employee turnover. Employee turnover refers to the total number of workers who leave a company over a certain time period.
 
 As the ML developer assigned to the HR Department, I have been asked to find
+*** 
+<b>**Part 1: Targeted Insights**</b>
 
-- <b>Part 1: Targeted Insights</b>
+- What was the average satisfaction level of employees who left the company?
+- Is lack of promotion related to employees leaving the company?
+- How balanced is the gender distribution across departments?
+- Which job roles have the highest attrition rates?
+- How many high performers (last evaluation > 0.8) left the company?
+  Link [Visit File](https://github.com/ABHISHEK-ALGO/H-R-ANALYTICS/blob/main/Hr%20targeted%20insights.sql)
 
-  * With the aid of SQL, I pull out more targeted insights for the finance and marketing team, highlighting things like MacBook sales, refund rates, and best performing marketing channels.
-
-- <b>Part 2: Visualize Employee Turnover and Potential groups of Employees in the Company.</b>
+<b>**Part 2: Visualize Employee Turnover and Potential groups of Employees in the Company**</b>
 The interactive dashboard provides valuable insights into employee turnover and potential employee segments by allowing users to filter data based on Department and Educational Background. It presents comprehensive metrics, including overall employee counts, turnover count, turnover rate, and distribution across various age groups. The dashboard visualizes turnover trends across departments, age groups, genders, and educational backgrounds. By using different combinations of filters, users can derive meaningful insights to better understand turnover patterns within the company.</b>
-
--<b>Key Findings:</b>
 
 *The company has a total of 14,999 employees, with an average age of 42 years.
 *The overall turnover rate is 24%, considering employees from all educational backgrounds.
@@ -42,12 +45,15 @@ Over half of the workforce comprises graduates, who also exhibit a higher turnov
 Employees with a PhD represent a very small portion of the workforce and have the lowest turnover rate.
 The Sales department experiences the highest turnover among all departments.
 Company has more than half employee count with graduation as educational background with high turnover while PHD are too less in numbers with lowest turnover. Sales department has the highest turnover. More insights can be explore by interacting with the dashboard.
-- <b>Part 3: Perform EDA to get deeper insights for the turnover and find reasons of turnover.
-- <b>Part 4: Perform Machine Learing</b>
+
+
+<b>**Part 3: Perform EDA to get deeper insights for the turnover and find reasons of turnover**</b>
+
+<b>**Part 4: Perform Machine Learing**</b>
   * To Cluster Employees who left based on their satisfaction and evaluation.
   * Gather important attributes or features responsible
   * Develop a model to predict employee will leave or stay.
-- <b>Part 5: Deploy a model</b>
+<b>**Part 5: Deploy a model**</b>
   * Build a prototype webpage which takes features responsible for turnover as input and predict whether employee will stay or leave.
 
 

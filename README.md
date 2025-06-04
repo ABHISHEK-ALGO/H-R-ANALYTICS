@@ -14,7 +14,7 @@ Dashboard pic or video
 [Application and Recommendations](#section6)<br>
 [Assumptions Taken if Any](#section7)<br>
 
-<a id='section_1'></a>
+<a id='section0'></a>
 ## Project Summary
 **Project Statement:**
 Portobello Tech is an app innovator that has devised an intelligent way of predicting employee turnover within the company. It periodically evaluates employees' work details including the number of projects they worked upon, average monthly working hours, time spent in the company, promotions in the last 5 years, and salary level.
@@ -25,6 +25,7 @@ HR Department owns the data and uses it to predict employee turnover. Employee t
 
 As the ML developer assigned to the HR Department, I have been asked to find
 *** 
+<a id='section1'></a>
 <b>**Part 1: Targeted Insights**</b>
 
 - What was the average satisfaction level of employees who left the company?
@@ -34,6 +35,7 @@ As the ML developer assigned to the HR Department, I have been asked to find
 - How many high performers (last evaluation > 0.8) left the company?
   Link [Visit File](https://github.com/ABHISHEK-ALGO/H-R-ANALYTICS/blob/main/Hr%20targeted%20insights.sql)
 
+<a id='section2'></a>
 <b>**Part 2: Visualize Employee Turnover and Potential groups of Employees in the Company**</b>
 The interactive dashboard provides valuable insights into employee turnover and potential employee segments by allowing users to filter data based on Department and Educational Background. It presents comprehensive metrics, including overall employee counts, turnover count, turnover rate, and distribution across various age groups. The dashboard visualizes turnover trends across departments, age groups, genders, and educational backgrounds. By using different combinations of filters, users can derive meaningful insights to better understand turnover patterns within the company.</b> 
 ![Image](https://github.com/user-attachments/assets/c4ac8bb5-75bf-4535-a075-09237b504a2b)
@@ -50,22 +52,34 @@ The interactive dashboard provides valuable insights into employee turnover and 
  - The Sales department experiences the highest turnover among all departments.
  - Company has more than half employee count with graduation as educational background with high turnover while PHD are too less in numbers with lowest turnover. Sales department has the    highest turnover. More insights can be explore by interacting with the dashboard.
 
-
+<a id='section3'></a>
 <b>**Part 3: Perform EDA to get deeper insights for the turnover and find reasons of turnover**</b>
+
 ![Image](https://github.com/user-attachments/assets/43672dbe-c5dd-4579-8d8a-93b8800f467e)
+
 ![Image](https://github.com/user-attachments/assets/437cafdb-9ffb-422e-a583-6319f89ef04c)
 
-
+<a id='section4'></a>
 <b>**Part 4: Perform Machine Learing**</b>
-  * To Cluster Employees who left based on their satisfaction and evaluation.![Image](https://github.com/user-attachments/assets/13677812-7054-407c-b29d-98f0149642f0)
 
-  * Gather important attributes or features responsible![Image](https://github.com/user-attachments/assets/c21932f4-cd0a-40e8-93fd-ab7e82cb2b38)
+  * To Cluster Employees who left based on their satisfaction and evaluation.
     
-  * Apply SMOTE to balance Target ![Image](https://github.com/user-attachments/assets/153316ca-7f25-463f-87eb-69da94ad5273)
+    ![Image](https://github.com/user-attachments/assets/13677812-7054-407c-b29d-98f0149642f0)
 
-  * Develop a model to predict employee will leave or stay.![Image](https://github.com/user-attachments/assets/0bb62882-c66d-4f5a-86bd-b77e6df79b08)
+  * Gather important attributes or features responsible
+    
+    ![Image](https://github.com/user-attachments/assets/c21932f4-cd0a-40e8-93fd-ab7e82cb2b38)
+    
+  * Apply SMOTE to balance Target
+    
+    ![Image](https://github.com/user-attachments/assets/153316ca-7f25-463f-87eb-69da94ad5273)
+
+  * Develop a model to predict employee will leave or stay.
+    
+    ![Image](https://github.com/user-attachments/assets/0bb62882-c66d-4f5a-86bd-b77e6df79b08)
 </b>
-  
+
+<a id='section5'></a>
 <b>**Part 5: Deploy a model**</b>
 
   * Build a prototype webpage which takes features responsible for turnover as input and predict whether employee will stay or leave.
